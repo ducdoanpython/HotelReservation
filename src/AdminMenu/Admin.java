@@ -84,7 +84,7 @@ public class Admin {
             if (choice == 1){
                 List<Customer> allCustomers = new ArrayList<Customer>(CustomerService.getAllCustomers());
                 for (Customer customer : allCustomers){
-                    System.out.println("Customer name: " + customer.getName() + "\t" +"Email " + customer.getEmail());
+                    System.out.println("Customer name: " + customer.getName() + "\t" +"Email: " + customer.getEmail());
                     System.out.println("");
                 }
                 System.out.println("");
