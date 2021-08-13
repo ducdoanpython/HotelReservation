@@ -89,10 +89,6 @@ public class Admin {
                 }
                 System.out.println("");
             }
-            else if (choice == 4){
-                createRoom();
-                System.out.println("");
-            }
             else if (choice == 2){
                 getAllRoom(rooms);
                 System.out.println("");
@@ -101,11 +97,14 @@ public class Admin {
                 ReservationService.printAllReservation();
                 System.out.println("");
             }
-            else if (choice == 6){
+            else if (choice == 4){
+                createRoom();
+                System.out.println("");
+            }
+            else if (choice == 6 || choice == 5){
                 runningAdmin = false;
                 System.out.println("");
             }
         }
-
     }
 }
